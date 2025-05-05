@@ -10,6 +10,18 @@ $(call inherit-product, device/xiaomi/marble/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Axion Flags
+AXION_MAINTAINER := JuanTutel
+AXION_PROCESSOR := Snapdragon_7+_Gen_2
+AXION_CPU_SMALL_CORES := 0,1,2,3
+AXION_CPU_BIG_CORES := 4,5,6,7
+AXION_MODERN_KERNEL := true
+AXION_CAMERA_REAR_INFO := 64,8,2
+AXION_CAMERA_FRONT_INFO := 16
+WITH_GMS := true
+BYPASS_CHARGE_SUPPORTED := false
+TARGET_ENABLE_BLUR := true
+
 PRODUCT_NAME := lineage_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
